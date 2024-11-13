@@ -1,0 +1,147 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("https://img.freepik.com/free-photo/colorful-festival-colors-spread-dark-surface_23-2148054187.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #f9f9f9;
+  backdrop-filter: brightness(0.7);
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  padding: 1rem;
+}
+
+/* Main container */
+main {
+  background: rgba(20, 20, 20, 0.8);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #333;
+  margin-top: 1rem;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-wrap: wrap; /* Allow inputs to wrap on smaller screens */
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+select {
+  flex: 1 1 45%; /* Ensure form elements are flexible and take up equal space */
+  padding: 0.8rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  flex: 1 1 100%; /* Button takes full width on smaller screens */
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #ff007f, #ffbf00);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff4fa7, #ffd13f);
+  transform: scale(1.05);
+}
+
+/* Task Section */
+section p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #ffbf00;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  word-wrap: break-word; /* Ensure long text doesn't overflow */
+}
+
+section p:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.priority {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.fa-check,
+.fa-edit,
+.fa-trash {
+  color: #ffbf00;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.fa-edit:hover {
+  color: #ffd13f;
+}
+
+.fa-trash:hover {
+  color: #ff4f4f;
+}
+
+/* Completed task styles */
+.completed {
+  color: #00ff7f;
+  text-decoration: line-through;
+  font-style: italic;
+  animation: greenBlinky 1s ease-in-out infinite alternate;
+}
+
+.completed .fa-check {
+  color: #00ff7f; /* Green for completed */
+}
+
+/* Keyframes for green blinky effect */
+@keyframes greenBlinky {
+  0% {
+    color: #00ff7f;
+  }
+  100% {
+    color: #4affb1;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  form {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  input[type="text"],
+  select {
+    flex: 1 1 100%; /* Take full width */
+  }
+}
