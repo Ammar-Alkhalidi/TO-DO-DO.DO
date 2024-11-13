@@ -1,4 +1,6 @@
 # Todo List Application
+
+![Screnshoot](imgs/Jeansify-online-shop.png)
 A dynamic, responsive Todo List web application built with HTML, CSS, and JavaScript. This app allows users to add tasks with priority levels, mark tasks as complete, edit tasks, and delete them. The UI is responsive, adapting well to both mobile and desktop screens, and includes interactive animations and effects for a vibrant user experience.
 
 # Features
