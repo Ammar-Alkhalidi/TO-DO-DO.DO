@@ -1,5 +1,6 @@
 # Todo List Application
 
+![Screnshoot](https://github.com/Ammar-Alkhalidi/TO-DO-DO.DO/blob/main/Screenshot%20from%202024-11-13%2015-59-48.png?raw=true)
 !Screenshot from 2024-11-13 15-59-48.png
 A dynamic, responsive Todo List web application built with HTML, CSS, and JavaScript. This app allows users to add tasks with priority levels, mark tasks as complete, edit tasks, and delete them. The UI is responsive, adapting well to both mobile and desktop screens, and includes interactive animations and effects for a vibrant user experience.
 
