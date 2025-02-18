@@ -33,3 +33,7 @@ Select a priority from the dropdown list (High, Normal, or Low).
 Click the “Add your Todo” button to add the task to the list.
 Click on the task text to mark it as completed.
 Click the edit icon to edit the text or priority, and the delete icon to remove the task.
+Script by AMMAR ALKHALIDI
+
+![Screnshoot](https://github.com/Ammar-Alkhalidi/Todo-List-React/blob/main/scripted%20by%20AMMAR.webp)
+
